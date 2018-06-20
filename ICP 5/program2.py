@@ -68,7 +68,7 @@ def init_graph(N, p1, p2):
 
 def Simulate_Clusters():
     print(".........Starting Cluster Simulation.........")
-    N = int(input('Enter the number of points: '))
+    N = int(input("Enter the number of points: "))
     K = int(input("Enter the number of Clusters: "))
     # Creating Data sets of height and weight of persons
     height = np.array([20.22, 30, 10, 25, 34, 48, 18, 29, 32, 39, 42,22,34,22,34,33,44])
