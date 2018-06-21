@@ -62,7 +62,7 @@ def plot_cluster(mu,cluster, itr):
     plt.show()
 
 def init_graph(N, p1, p2):
-        X = np.array([(random.choice(p1),random.choice(p2))for i in range(N)])
+    X = np.array([(random.choice(p1),random.choice(p2))for i in range(N)])
     return X
 
 
@@ -75,7 +75,7 @@ def Simulate_Clusters():
     weight = np.array([10, 12, 14, 20, 16, 18,22,45,67,56,22,33])
     X = init_graph(N, height, weight)
     print(X)
-        plt.scatter(X[:, 0], X[:, 1])
+    plt.scatter(X[:, 0], X[:, 1])
     plt.show()
     Apply_Kmeans(X, K, N)
 
