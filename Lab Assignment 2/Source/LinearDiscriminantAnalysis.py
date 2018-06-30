@@ -18,7 +18,7 @@ X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.4,
 # Applying Linear Discriminant Analysis
 lda_clf = LinearDiscriminantAnalysis(n_components=2)
 X_r = lda_clf.fit(data, labels).transform(data)
-# Making Prediction based on complete data
+# Making Prediction on complete data
 expected = labels
 lda_predict = lda_clf.predict(data)
 # print(expected)
