@@ -13,11 +13,15 @@ f = tf.matmul(e,c,name='output')
 
 # printing the input matrices
 with tf.Session() as session:
+    print("Matrix a: ")
     print(session.run(a))
+    print("Matrix b: ")
     print(session.run(b))
+    print("Matrix c: ")
     print(session.run(c))
-    
+
 # printing the output
 with tf.Session() as session:
+    print("Output Matrix: ")
     print(session.run(f))
 
