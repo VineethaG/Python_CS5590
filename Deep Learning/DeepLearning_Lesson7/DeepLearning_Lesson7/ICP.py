@@ -23,7 +23,7 @@ data = pandas.read_csv('data/Womens Clothing E-Commerce Reviews.csv', sep=',', h
 csvData = data.values
 print(csvData[1][0])
 
-# saving the review text
+# saving the review text in "data.txt" file
 with open('data/data.txt', 'a') as f:
     for i in range(2):
         f.write(csvData[i][0])
